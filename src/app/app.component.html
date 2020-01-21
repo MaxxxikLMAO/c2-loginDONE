@@ -1,0 +1,14 @@
+<div *ngIf="login === false" id="all">
+  <form>
+    <input type="text" name="username" [(ngModel)]="username" placeholder="Enter username" />
+    <input type="password" name="passwrd" [(ngModel)]="passwrd" placeholder="Enter password" />
+  </form>
+
+  <button (click)="clickedButton()">Login</button>
+
+  
+
+</div>
+<div *ngIf="login === true">
+  {{alert}}
+</div>
